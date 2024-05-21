@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Calculadora 1linea js</title>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <form name="botones">
+               <input type="textfield" value="" placeholder="0" name="ans" id="textInput" readonly autocomplete="off">
+                <br>
+               <input type="button"value="7" name="text" class="gris" onclick="document.botones.ans.value+='7'">
+               <input type="button"value="8" name="text" class="gris" onclick="document.botones.ans.value+='8'">
+               <input type="button"value="9" name="text" class="gris" onclick="document.botones.ans.value+='9'">
+               <input type="button"value="*" name="text" class="color" onclick="document.botones.ans.value+='*'">
+                <br>
+               <input type="button"value="4" name="text" class="gris" onclick="document.botones.ans.value+='4'">
+               <input type="button"value="5" name="text" class="gris" onclick="document.botones.ans.value+='5'">
+               <input type="button"value="6" name="text" class="gris" onclick="document.botones.ans.value+='6'">
+               <input type="button"value="-" name="text" class="color" onclick="document.botones.ans.value+='-'">
+                <br>
+               <input type="button"value="1" name="text" class="gris" onclick="document.botones.ans.value+='1'">
+               <input type="button"value="2" name="text" class="gris" onclick="document.botones.ans.value+='2'">
+               <input type="button"value="3" name="text" class="gris" onclick="document.botones.ans.value+='3'">
+               <input type="button"value="+" name="text" class="color" onclick="document.botones.ans.value+='+'">
+                <br>
+               <input type="button"value="0" name="text" class="gris" onclick="document.botones.ans.value+='0'">
+               <input type="reset"value="C" name="text" class="gris">
+               <input type="button"value="=" name="text" class="gris" id='equalButton' onclick="document.botones.ans.value=eval(document.botones.ans.value)">
+               <input type="button"value="/" name="text" class="color" onclick="document.botones.ans.value+='/'">
+            </form>
+        </div>
+    </main>
+
+    <script src="/index.js"></script>
+</body>
+</html>
