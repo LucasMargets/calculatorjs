@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora 1linea js</title>
 </head>
 <body>
@@ -29,13 +29,13 @@
                <input type="button"value="+" name="text" class="color" onclick="document.botones.ans.value+='+'">
                 <br>
                <input type="button"value="0" name="text" class="gris" onclick="document.botones.ans.value+='0'">
-               <input type="reset"value="C" name="text" class="gris">
+               <input type="reset"value="C" name="text" class="gris" id="resetButton">
                <input type="button"value="=" name="text" class="gris" id='equalButton' onclick="document.botones.ans.value=eval(document.botones.ans.value)">
                <input type="button"value="/" name="text" class="color" onclick="document.botones.ans.value+='/'">
             </form>
         </div>
     </main>
 
-    <script src="/index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
